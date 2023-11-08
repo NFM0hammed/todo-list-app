@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Open+Sans:wght@300;500;700&family=Poppins:wght@100;200;300;400;500;700;800&family=Roboto:wght@100;300;500&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F1F1F1;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="button"] {
+    color: #FFF;
+    width: 100px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+h1 {
+    color: #0088f3;
+    text-align: center;
+    font-weight: normal;
+}
+
+.todo-list {
+    background-color: #FFF;
+    width: 500px;
+    margin: 50px auto;
+    padding: 10px;
+    border-top: 4px solid #0088f3;
+    border-bottom: 1px solid #aeaeae;
+    border-radius: 5px;
+}
+
+.todo-list .task {
+    display: flex;
+    justify-content: center;
+}
+
+.todo-list .task .name-task {
+    width: 100%;
+}
+
+.todo-list .task .name-task input {
+    background-color: #F5F5F5;
+    height: 30px;
+    width: calc(100% - 10px);
+    padding: 0 0 0 5px;
+    border: none;
+}
+
+.todo-list .task .name-task input:focus {
+    outline: none;
+}
+
+.todo-list .task .add-task {
+    margin-right: 10px;
+}
+
+.todo-list .task .add-task input {
+    background-color: #4CAF50;
+}
+
+.todo-list .task .add-task input.active {
+    background-color: #4caf4f7e;
+    cursor: no-drop;
+}
+
+.todo-list .task .remove-tasks input {
+    background-color: rgb(139, 0, 0);
+}
+
+.todo-list .task .remove-tasks input.active {
+    background-color: rgba(139, 0, 0, 0.413);
+    cursor: no-drop;
+}
+
+.todo-list .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 0;
+}
+
+.todo-list .content .content-task {
+    background-color: #F5F5F5;
+    width: calc(100% - 110px);
+}
+
+.todo-list .content .content-task p {
+    height: 30px;
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 5px;
+    text-decoration: line-through;
+}
+
+@media(max-width: 480px) {
+    .todo-list .content .content-task p {
+        font-size: 13px;
+    }
+}
+
+.todo-list .content .content-task p.not-done {
+    text-decoration: none;
+}
+
+.todo-list .content .remove-task input {
+    background-color: red;
+    width: 100px;
+    height: 30px;
+}
+
+footer {
+    width: 500px;
+    margin: auto;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer p span {
+    font-weight: bold;
+}
+
+@media(max-width: 480px) {
+    .todo-list,
+    footer {
+        width: auto;
+    }
+}
